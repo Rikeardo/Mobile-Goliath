@@ -21,11 +21,11 @@ request.onreadystatechange = function()
         if(version < updatedScriptVersion)
         {
             console.log("Update script");
-            window.location.href = "https://youtu.be/dQw4w9WgXcQ";
+            window.location.href = "https://github.com/Rikeardo/Mobile-Goliath/raw/master/MobileGoliath.user.js";
         }
     }
 };
-request.open('GET', '', true);
+request.open('GET', 'https://raw.githubusercontent.com/Rikeardo/Mobile-Goliath/master/MobileVersion.json', true);
 request.send(null);
 
 $("<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>").insertAfter("title:first");
